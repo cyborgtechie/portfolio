@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Maria Guerrero's Portfolio"/>
+    <meta name="description" content="Maria Guerrero's Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
@@ -14,54 +14,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-      <!-- ========= FONT AWESOME =========-->
-      <script src="https://kit.fontawesome.com/b7241d4776.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="menu.css" />
+    <!-- ========= FONT AWESOME =========-->
+    <script
+      src="https://kit.fontawesome.com/b7241d4776.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-<!-- ============= NAV ============== -->
-
+    <!-- ============= NAV ============== -->
     <nav class="nav" role="navigation">
-        <div class="headline-container">
-          <p>
-            MG
-          </p>
-        </div>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
+      <div class="headline-container">
+        <p>
+          MG
+        </p>
       </div>
-
-      <!-- <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
-          <li></li>
-        </ul> -->
+      <div class="hamburger" id="toggle">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </div>
+      <div class="nav-overlay" id="overlay">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-<!-- ============= END NAV ============== -->
+    <!-- ============= END NAV ============== -->
 
-<!-- ============= START HEADER ============== -->
+    <!-- ============= START HEADER ============== -->
     <header class="header">
       <h1 class="headline">
         Hey—I’m a Front-End Developer. Explorer. Learner. Problem-Solver. 90’s
         Rom-Coms Connoisseur—You can call me, Maria.
       </h1>
       <div class="img-circle">
-        <img src="">
+        <img src="" />
       </div>
-      <section class="about-me-section">
+      <section class="about-me-section" id="about-me">
         <h2 class="bio">Bio</h2>
         <p class="about-p"></p>
       </section>
     </header>
-<!-- ============= END HEADER ============== -->
+    <!-- ============= END HEADER ============== -->
 
-<!-- ============= START MAIN ============== -->
+    <!-- ============= START MAIN ============== -->
     <main role="main">
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>Take a look at some of my projects</h2>
         <div class="project-1">
           <p class="proj-title">Sleep Quiz</p>
@@ -78,11 +80,11 @@
         </div>
       </section>
     </main>
-<!-- ============= END MAIN ============== -->
+    <!-- ============= END MAIN ============== -->
 
-<!-- ============= START FOOTER/CONTACTS ============== -->
+    <!-- ============= START FOOTER/CONTACTS ============== -->
 
-    <footer class="contact">
+    <footer class="contact" id="contact">
       <h2>Contact Links</h2>
       <div class="links">
         <!-- these will be icons -->
@@ -95,7 +97,7 @@
         </ul>
       </div>
     </footer>
-<!-- ============= START FOOTER/CONTACTS ============== -->
+    <!-- ============= START FOOTER/CONTACTS ============== -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js"
