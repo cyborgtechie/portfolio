@@ -1,56 +1,89 @@
-:root {
-  /* how hamburger looks regular */
-  --primary-color: rgba(13, 110, 139, 0.75);
-  /* when hamburger is clicked on */
-  --overlay-color: rgba(24, 39, 51, 0.85);
-  /* how fast menu will react when toggled */
-  --menu-speed: 0.75s;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+.hamburger {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.9rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.bar {
+  background-color: #ff5252;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.bar + .bar {
+  margin-top: 4px;
+}
+.middle {
+  top: 11px;
+}
+.bottom {
+  top: 22px;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.toggle-active .bar {
+  background-color: #fff;
+}
+.toggle-active .top {
+  -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+}
+.toggle-active .middle {
+  opacity: 0;
+}
+.toggle-active .bottom {
+  -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+}
+
+.nav-overlay {
+  position: fixed;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+}
+.nav-overlay-active {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  /*    max-height: 340px;*/
+}
+.nav-overlay ul {
+  display: block;
+  position: relative;
+  top: 60px;
+  left: 0;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  list-style: none;
   padding: 0;
 }
-
-body {
-  font-family: "Work Sans", sans-serif;
-  line-height: 1.4;
+.nav-overlay ul li {
+  display: block;
 }
-
-
-
-.header-container {
-    max-width: 500px;
-    margin: auto;
-    overflow: hidden;
-    padding 0 3rem;
-}
-
-.header {
-    background-color: var(--primary-color);
-    color: #fff;
-    height: 100vh;
-    position: relative;
-}
-
-.header::before {
-    content: "";
-    background: url('');
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.header,.inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-
+.nav-overlay ul li a {
+  color: #fff;
+  text-decoration: none;
 }
