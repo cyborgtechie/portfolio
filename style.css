@@ -1,0 +1,188 @@
+/* COLOR PALETTE */
+/* color: #F87368;
+color: #072FBD;
+color: #4592AF;
+color: #C6BAB8;
+color: #294BB6;
+color: #A36277; */
+/* END COLOR PALETTE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+html,
+.headline-container {
+  background: rgb(248, 115, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 115, 104, 1) 17%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+}
+
+p,
+nav {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: black;
+  padding: 1.875rem;
+}
+main {
+  width: 100%;
+}
+/*///////////////// NAVIGATION ///////////////// */
+nav,
+header {
+  background-color: #fdf0dd;
+}
+nav li {
+  list-style: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
+}
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 0.25rem; */
+  width: 300px;
+  height: 70%;
+}
+.headline-container p {
+  line-height: -1.2;
+  margin: 0;
+  padding: 1rem;
+  font-size: 2em;
+  color: #fdf0dd;
+}
+.hamburger {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.25rem;
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  border: 1px solid black;
+  content: "";
+}
+/*///////////////// NAVIGATION END ///////////////// */
+header {
+  padding: 5rem 3.5rem;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-circle,
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.headline {
+  display: flex;
+  align-self: flex-start;
+  padding-right: 13rem;
+  font-size: 1em;
+  background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.bio,
+.projects,
+.contact {
+  font-size: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  padding-bottom: 10rem;
+  margin: 0 auto;
+  background: #fdf0dd;
+}
+.project-1 {
+  font-size: 0.5em;
+  border: 1px solid #294bb6;
+  width: 90%;
+}
+.proj-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.proj-desc,
+.proj-tech,
+.proj-links {
+  margin: 0.5em;
+}
+
+footer {
+  background: #294bb6;
+}
+
+div .links {
+  display: flex;
+  flex-direction: row;
+}
+
+/* these will be icons */
+div li {
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.email,
+.linkedin,
+.twitter,
+.github {
+  background-repeat: no-repeat;
+  background-position: 10% 10px;
+}
