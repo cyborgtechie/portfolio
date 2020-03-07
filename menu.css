@@ -1,0 +1,56 @@
+:root {
+  /* how hamburger looks regular */
+  --primary-color: rgba(13, 110, 139, 0.75);
+  /* when hamburger is clicked on */
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  /* how fast menu will react when toggled */
+  --menu-speed: 0.75s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.4;
+}
+
+
+
+.header-container {
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    padding 0 3rem;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    background: url('');
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header,.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+}
