@@ -37,7 +37,8 @@ h3 {
 }
 
 p,
-nav {
+nav,
+.nav-overlay ul {
   font-family: "Poppins", sans-serif;
 }
 
@@ -52,23 +53,10 @@ body {
 main {
   width: 100%;
 }
-/*///////////////// NAVIGATION ///////////////// */
+/*///////////////// HEADLINE ///////////////// */
 nav,
 header {
   background-color: #fdf0dd;
-}
-nav li {
-  list-style: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  text-align: right;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 7.5rem;
 }
 .headline-container {
   display: flex;
@@ -85,24 +73,7 @@ nav {
   font-size: 2em;
   color: #fdf0dd;
 }
-.hamburger {
-  padding: 2px;
-  width: 50px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 0.25rem;
-}
-.line {
-  width: 40px;
-  height: 2px;
-  background-color: black;
-  border: 1px solid black;
-  content: "";
-}
-/*///////////////// NAVIGATION END ///////////////// */
+/*///////////////// HEADLINE END ///////////////// */
 header {
   padding: 5rem 3.5rem;
   font-size: 2em;
