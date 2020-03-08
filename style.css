@@ -18,6 +18,7 @@ color: #A36277; */
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    overflow-x: hidden;
   }
 
   html,
@@ -51,6 +52,7 @@ color: #A36277; */
     line-height: 1.7;
     color: black;
     padding: 1.875rem;
+    overflow-x: hidden;
   }
 
   .about-me-section,
@@ -127,13 +129,13 @@ color: #A36277; */
     display: flex;
     align-self: flex-start;
     padding-left: 1em;
-    padding-right: 12rem;
+    padding-right: 7.3rem;
     margin-bottom: 1em;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
     color: linear-gradient(
       90deg,
       rgba(131, 58, 180, 1) 0%,
@@ -258,17 +260,27 @@ color: #A36277; */
   }
 
   .icon {
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-size: 2em;
     color: #26fccd;
   }
 }
 /*///////////////// END CONTACT INFO ///////////////// */
 
+@media screen and(min-width: 500) {
+  .headline {
+    padding-left: 1em;
+    padding-right: 12rem;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 720px) {
   .headline {
     padding-left: 1em;
-    padding-right: 22rem;
+    padding-right: 16rem;
+    font-size: 1.5rem;
   }
   .title,
   .proj-title {
@@ -311,7 +323,7 @@ color: #A36277; */
   .icon {
     justify-content: space-between;
     padding: 0 2rem;
-    font-size: 2.5em;
+    font-size: 2.9em;
     color: #26fccd;
   }
 }
