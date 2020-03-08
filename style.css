@@ -126,7 +126,7 @@ color: #A36277; */
     margin-top: 5em;
   }
   .headline {
-    display: flex;
+    display: inline;
     align-self: flex-start;
     padding-left: 1em;
     padding-right: 7.3rem;
