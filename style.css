@@ -267,6 +267,8 @@ color: #A36277; */
 }
 /*///////////////// END CONTACT INFO ///////////////// */
 
+/*///////////////// MEDIA QUERIES ///////////////// */
+
 @media screen and(min-width: 500) {
   .headline {
     padding-left: 1em;
