@@ -132,11 +132,13 @@ color: #A36277; */
     padding-right: 7.3rem;
     margin-bottom: 1em;
     font-size: 1rem;
+    background: rgb(248, 115, 104);
     background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
+    background: -o-linear-gradient(#833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    color: linear-gradient(
+    color: -webkit-linear-gradient(
       90deg,
       rgba(131, 58, 180, 1) 0%,
       rgba(253, 29, 29, 1) 50%,
