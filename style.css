@@ -102,6 +102,25 @@
     font-size: 2em;
     color: #fdf0dd;
   }
+
+ .headline {
+    display: inline;
+    align-self: flex-start;
+    padding-left: 1em;
+    padding-right: 7.5rem;
+    margin-bottom: 1em;
+    font-size: .9rem;
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    color: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  }
   /*///////////////// HEADLINE END ///////////////// */
 
   /*///////////////// START HEADER/BIO ///////////////// */
@@ -116,24 +135,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 5em;
-  }
-  .headline {
-    display: inline;
-    align-self: flex-start;
-    padding-left: 1em;
-    padding-right: 4rem;
-    margin-bottom: 1em;
-    font-size: .9rem;
-    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    color: linear-gradient(
-      90deg,
-      rgba(131, 58, 180, 1) 0%,
-      rgba(253, 29, 29, 1) 50%,
-      rgba(252, 176, 69, 1) 100%
-    );
   }
 
   .img-circle {
