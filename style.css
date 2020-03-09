@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width:300px) {
+@media screen and (min-width: 300) {
   html {
     font-size: 1rem;
     display: flex;
