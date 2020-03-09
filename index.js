@@ -1,7 +1,7 @@
 //////////// MOBILE NAV FUNCTIONALITY ////////////
 function displayProjects() {
   $(document).ready(function() {
-    $(".proj-demo").append(`<img src='./imgs/app-sc.png'>`);
+    $(".proj-demo").append(`<img src='./imgs/app-sc.png' alt="screenshot of sleep quiz project">`);
     $(".proj-desc").append(` 
   <h3 class="proj-header">What's it about?</h3>
   <p>A quiz app that tests your knowledge on all things sleep—from dreams
