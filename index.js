@@ -30,7 +30,7 @@ function mobileMenuToggled() {
   $(".nav-overlay li").on("click", function() {
     let width = $(window).width();
     if (width < 913) {
-      $("#overlay").hide();
+      $("#overlay").toggleClass("nav-overlay-active").hide();
       $('.hamburger').toggleClass("toggle-active");
     }
   });
