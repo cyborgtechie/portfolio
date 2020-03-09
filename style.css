@@ -12,7 +12,7 @@ color: #A36277; */
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 300px) {
+
   html {
     font-size: 1rem;
     display: flex;
@@ -264,7 +264,7 @@ color: #A36277; */
     font-size: 2em;
     color: #26fccd;
   }
-}
+
 /*///////////////// END CONTACT INFO ///////////////// */
 
 /*///////////////// MEDIA QUERIES ////////////////// */
@@ -354,7 +354,7 @@ color: #A36277; */
   }
 }
 
-@media screen and (min-width: 1117px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1117px) and (-webkit-min-device-pixel-ratio: 1) {
   .headline {
     padding-left: 1em;
     padding-right: 2rem;
