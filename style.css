@@ -262,7 +262,7 @@
 
 /*///////////////// MEDIA QUERIES ////////////////// */
 
-@media screen and(min-width: 500) {
+@media screen and(min-width: 500px) {
   .headline {
     padding-left: 1em;
     padding-right: 12rem;
@@ -312,9 +312,9 @@
   .contact-me {
     margin-top: -42px;
   }
-/*   footer {
-    height: 160px;
-  } */
+  .links {
+  padding: 0 1rem 2rem;
+  }
   .icon {
     justify-content: space-between;
     padding: 0 2rem;
@@ -420,7 +420,7 @@
   }
 }
 
-@media screen and (min-width: 1600) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .bio-p {
     font-size: 1.8rem;
     margin: 0 auto;
