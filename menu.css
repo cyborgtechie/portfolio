@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 913px) {
+@media screen and (min-width: 300px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -150,7 +150,7 @@
     );
   }
 }
-@media screen and (min-width: 1117px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1117px) and (-webkit-min-device-pixel-ratio: 1) {
   nav {
     height: 160px;
   }
