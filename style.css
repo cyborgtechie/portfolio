@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 300) {
+
   html {
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -256,7 +256,7 @@
     font-size: 1.5em;
     color: #26fccd;
   }
-}
+
 
 /*///////////////// END CONTACT INFO ///////////////// */
 
