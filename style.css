@@ -235,10 +235,9 @@
   /*///////////////// START CONTACT INFO///////////////// */
   footer {
     background: #294bb6;
-/*     height: 100px; */
   }
   .contact-me {
-    margin-top: -40px;
+    margin-top: -36px;
   }
   .links {
     display: flex;
@@ -313,9 +312,9 @@
   .contact-me {
     margin-top: -42px;
   }
-  footer {
+/*   footer {
     height: 160px;
-  }
+  } */
   .icon {
     justify-content: space-between;
     padding: 0 2rem;
@@ -404,16 +403,13 @@
 
   footer {
     background: #294bb6;
-    height: 200px;
   }
   .contact-me {
     margin-top: -60px;
   }
   .icon {
-    justify-content: space-between;
     padding: 0 2rem;
     font-size: 4em;
-    color: #26fccd;
   }
 
   .proj-link:hover {
@@ -422,4 +418,29 @@
   .proj-tech i {
     font-size: 2.5rem;
   }
+}
+
+@media screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .bio-p {
+    font-size: 1.8rem;
+    margin: 0 auto;
+   
+    
+  .icon {
+    padding: 0 5rem;
+    font-size: 5em;
+    color: #26fccd;
+  }
+    .title, .nav-overlay li a,
+    h3, .proj-link {
+      font-size: 3em;
+    }
+    
+    .sizing {
+      width: 90%
+    }
+    
+    .proj-desc p {
+      font-size: 1.5em;
+    }
 }
