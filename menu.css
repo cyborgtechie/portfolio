@@ -1,4 +1,4 @@
-@media and screen (min-width: 300) { 
+@media and screen (min-width: 300px) { 
 nav {
     display: flex;
     justify-content: space-between;
