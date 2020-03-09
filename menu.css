@@ -1,5 +1,5 @@
-@media and screen (min-width: 300px) { 
-nav {
+@media screen and (min-width: 300px) and (max-width: 913px) {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,8 @@ nav {
     z-index: 3;
   }
 
-  .bar {
+
+.bar {
     background-color: #ff5252;
     display: block;
     width: 100%;
@@ -54,7 +55,8 @@ nav {
     transform: translateY(-12px) translateX(0) rotate(-45deg);
   }
 
-  .nav-overlay {
+
+.nav-overlay {
     position: fixed;
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     top: 0;
