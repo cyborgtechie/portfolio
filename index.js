@@ -31,6 +31,7 @@ function mobileMenuToggled() {
     let width = $(window).width();
     if (width < 913) {
       $("#overlay").hide();
+      $('.hamburger').toggleClass("toggle-active");
     }
   });
   $("#overlay").on("scroll touchmove mousewheel", function(e) {
