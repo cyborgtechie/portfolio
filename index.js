@@ -19,26 +19,30 @@ function displayProjects() {
 }
 
 function mobileMenuToggled() {
-  $("#toggle").click(function() {
+  $("#toggle").on("click", function() {
     $(this).toggleClass("toggle-active");
     $("#overlay")
       .toggleClass("nav-overlay-active")
       .show();
   });
 
-  // Close after clicking on a menu option
-  $(".nav-overlay li").on("click", function() {
-    let width = $(window).width();
-    if (width < 913) {
-      $("#overlay").hide();
-    }
-  });
   $("#overlay").on("scroll touchmove mousewheel", function(e) {
     e.preventDefault();
     e.stopPropagation();
     return false;
   });
-}
 
+  // Close after clicking on a menu option
+  $("nav li ").on("click", function() {
+    $(this).show();
+    let width = $(window).width();
+    if (width < 913) {
+      $("#overlay")
+        .toggleClass("nav-overlay-active")
+        .hide();
+      $(".hamburger").toggleClass("toggle-active");
+    }
+  });
+}
 $(displayProjects);
 $(mobileMenuToggled);
