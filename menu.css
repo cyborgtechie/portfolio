@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 913px) {
+@media screen and (max-width: 913px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -109,6 +109,7 @@
 }
 @media screen and (min-width: 913px) {
   nav {
+    height: 160px;
     background: rgba(252, 176, 69, 0.1);
     margin: 0 auto 1em;
   }
@@ -119,7 +120,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1em 0.9rem 0;
+    padding: 1em 0.9rem 3rem;
   }
 
   .nav-overlay li a {
@@ -150,10 +151,7 @@
     );
   }
 }
-@media screen and (min-width: 1117px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  nav {
-    height: 160px;
-  }
+@media screen and (min-width: 1117px) and (-webkit-min-device-pixel-ratio: 1) {
   .nav-overlay li a {
     justify-content: space-evenly;
     list-style: none;
