@@ -10,7 +10,7 @@
     </title>
     <!-- ====== GOOGLE FONTS STYLESHEET ======= -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins%7CWork+Sans:400,700&display=swap"
       rel="stylesheet"
     />
     <!-- ====== MAIN STYLESHEETS ======= -->
@@ -28,7 +28,7 @@
   <body>
     <div class="inner-bg">
       <!-- ============= NAV ============== -->
-      <nav class="nav" role="navigation">
+      <nav class="nav">
         <div class="headline-container">
           <p>
             MG
@@ -39,7 +39,7 @@
           <span class="bar middle"></span>
           <span class="bar bottom"></span>
         </div>
-        <div class="nav-overlay" id="overlay">
+        <div class="nav-overlay desktop-nav" id="overlay">
           <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -56,7 +56,11 @@
           Rom-Coms Connoisseur—You can call me, Maria.
         </h1>
         <div class="img-circle">
-          <img class="me resize" src="./imgs/itMe.jpg" />
+          <img
+            class="me resize"
+            src="./imgs/itMe.jpg"
+            alt="women with brown hair smiling"
+          />
         </div>
       </header>
 
@@ -64,9 +68,9 @@
         <h2 class="bio title">Bio</h2>
         <p class="bio-p">
           My love for web development first started when I was a pre-teen on
-          MySpace(sorry mom), and discovered the magic of HTML & CSS.
+          MySpace (sorry Mom), and discovered the magic of HTML & CSS.
           Fast-forward ten years, and I’ve discovered JS, jQuery, React, Git,
-          and Github. My passion for coding is elevated every time there is a
+          and GitHub. My passion for coding is elevated every time there is a
           problem that needs solving. My curious and detailed nature is what
           drives my love for continuous learning. I’m a strong advocate for
           accessibility, and would love to join a team with similar values.
@@ -76,7 +80,7 @@
       <!-- ============= END HEADER ============== -->
 
       <!-- ============= START MAIN ============== -->
-      <main role="main">
+      <main>
         <section class="projects" id="projects">
           <h2 class="title">Projects</h2>
           <h3 class="proj-title">Sleep Quiz</h3>
@@ -90,15 +94,15 @@
                   class="proj-link"
                   href="https://cyborgtechie.github.io/sleep-quiz/"
                   target="_blank"
-                  >Demo</a
-                >
+                  >Demo
+                </a>
                 <a
                   class="proj-link"
                   role="button"
                   href="https://github.com/cyborgtechie/sleep-quiz"
                   target="_blank"
-                  >Repo</a
-                >
+                  >Repo
+                </a>
               </div>
             </div>
           </div>
@@ -115,7 +119,10 @@
         <!-- these will be icons -->
         <ul>
           <li>
-            <a href="mailto:guerrermj@gmail.com" target="_blank"
+            <a
+              href="mailto:guerrermj@gmail.com"
+              target="_blank"
+              aria-label="Email"
               ><i class="icon fas fa-envelope"></i
             ></a>
           </li>
@@ -123,29 +130,32 @@
             <a
               href="https://www.linkedin.com/in/maria-j-guerrero/"
               target="_blank"
+              aria-label="LinkedIn"
               ><i class="icon fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/cyborgtechie" target="_blank"
+            <a
+              href="https://github.com/cyborgtechie"
+              target="_blank"
+              aria-label="GitHub"
               ><i class="icon fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.twitter.com/cyborgtechie" target="_blank"
+            <a
+              href="https://www.twitter.com/cyborgtechie"
+              target="_blank"
+              aria-label="Twitter"
               ><i class="icon fab fa-twitter"></i
             ></a>
           </li>
-          <li></li>
         </ul>
       </div>
     </footer>
 
     <!-- ============= START FOOTER/CONTACTS ============== -->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
