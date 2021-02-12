@@ -1,3 +1,3 @@
 # Portfolio
 
-## Hi, I'm Maria Guerrero! Checkout my portfolio: https://cyborgtechie.github.io/portfolio/
+## Hi, I'm Maria Guerrero! Checkout my portfolio: https://mariaguerrero.netlify.app/
